@@ -1,0 +1,122 @@
+
+ :root {
+    --coleurprincipale : #f1bd58;
+    --couleurnoire : #000000c8;
+    --background : #fdf8f0;
+}
+
+.cart {
+    margin-top: 10px;
+}
+
+.cart-items-title {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr 1fr 1fr 0.5fr;
+    align-items: center;
+    color: gray;
+    font-size: max(1vw,12px);
+}
+
+.cart-items-item {
+    margin: 10px 0;
+    color: black;
+}
+
+.cart-items-item:hover {
+    background-color: var(--coleurprincipale);
+    color: white;
+    font-weight: bold;
+}
+
+
+.cart-items-item img {
+    width: 50px;
+    height: auto;
+}
+
+.cart-items-item .cross {
+    cursor: pointer;
+    color: red;
+}
+
+.cart-bottom {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    gap: max(12vw, 20px);
+}
+
+.cart-total {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.cart-total-details {
+    display: flex;
+    justify-content: space-between;
+    color: #555;
+}
+
+.cart-total hr {
+    margin: 10px 0;
+}
+
+.cart-total button {
+    border: none;
+    background-color: var(--coleurprincipale);
+    width: max(15vw,200px);
+    border-radius: 4px;
+    color: white;
+    padding: 12px 0;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.cart-total button:hover {
+    background-color: #e6b249;
+}
+
+.cart-promotion {
+    flex: 1;
+}
+
+.cart-promotion {
+    color: #555;
+}
+
+.cart-promotion-input {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 4px;
+}
+
+.cart-promotion-input input {
+    background: transparent;
+    border: none;
+    outline: none;
+    padding-left: 10px;
+}
+
+.cart-promotion-input button {
+    width: max(10vw, 150px);
+    padding: 12px 5px;
+    background-color: black;
+    border: none;
+    color: white;
+    border-radius: 4px;
+}
+
+@media screen and (max-width:750px) {
+    .cart-bottom {
+        flex-direction: column-reverse;
+    }
+
+    .cart-promotion {
+        justify-content: start;
+    }
+}

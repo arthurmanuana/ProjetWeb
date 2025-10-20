@@ -1,0 +1,261 @@
+.header {
+  width: 100%;
+  height: 42vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  animation: Entree 3s;
+}
+
+.header .left {
+  width: 48%;
+}
+
+.header .left span {
+  font-weight: bold;
+  color: var(--coleurprincipale);
+}
+
+.header .left h1 {
+  font-size: 65px;
+  line-height: 1.1;
+}
+
+.header .left p {
+  font-size: 11px;
+  text-align: justify;
+  margin-top: 38px;
+}
+
+.header .left button {
+  background-color: var(--coleurprincipale);
+  border: none;
+  padding: 10px 30px;
+  border-radius: 50px;
+  margin-top: 38px;
+  transition: all 0.4s ease;
+}
+
+.header .left button:hover {
+  background-color: #f1be58c5;
+}
+
+.header .right {
+  width: 50%;
+  height: 90%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header .right img {
+  width: 70%;
+  height: 70%;
+  object-fit: cover;
+  animation: agrandi 10s ease-in-out infinite;
+}
+
+@keyframes agrandi {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@media screen and (max-width: 1173px) {
+  .header {
+  }
+
+  .header .left h1 {
+    font-size: 40px;
+  }
+
+  .header .left p {
+    font-size: 11px;
+    text-align: justify;
+    margin-top: 10px;
+  }
+
+  .header .left button {
+    background-color: var(--coleurprincipale);
+    border: none;
+    padding: 7px 23px;
+    border-radius: 50px;
+    margin-top: 10px;
+    transition: all 0.4s ease;
+    font-size: 11px;
+  }
+}
+
+@media screen and (max-width: 1082px) {
+  .header {
+
+  }
+
+  .header .left h1 {
+    font-size: 40px;
+  }
+
+  .header .left p {
+    font-size: 11px;
+    text-align: justify;
+    margin-top: 10px;
+  }
+
+  .header .left button {
+    background-color: var(--coleurprincipale);
+    border: none;
+    padding: 7px 23px;
+    border-radius: 50px;
+    margin-top: 10px;
+    transition: all 0.4s ease;
+    font-size: 11px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .header {
+    margin-top: 10px;
+  }
+
+  .header .left h1 {
+    font-size: 30px;
+  }
+
+  .header .left span {
+    font-weight: bold;
+    font-size: 12px;
+    color: var(--coleurprincipale);
+  }
+
+  .header .left p {
+    font-size: 11px;
+    text-align: justify;
+    margin-top: 10px;
+  }
+
+  .header .left button {
+    background-color: var(--coleurprincipale);
+    border: none;
+    padding: 5px 20px;
+    border-radius: 50px;
+    margin-top: 10px;
+    transition: all 0.4s ease;
+    font-size: 9px;
+  }
+}
+
+@media screen and (max-width: 682px) {
+  .header {
+    width: 100%;
+    height: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    animation: Entree 3s;
+  }
+
+  .header .left {
+    width: 100%;
+    text-align: center;
+  }
+
+  .header .left span {
+    margin-top: 80px;
+    font-weight: bold;
+    color: var(--coleurprincipale);
+  }
+
+  .header .left h1 {
+    font-size: 40px;
+    line-height: 1.1;
+    margin-bottom: 10px;
+  }
+
+  .header .left p {
+    font-size: 11px;
+    text-align: center;
+    max-width: 500px;
+    margin: auto 20px;
+  }
+
+  .header .left button {
+    background-color: var(--coleurprincipale);
+    border: none;
+    padding: 10px 30px;
+    border-radius: 50px;
+    margin-top: 10px;
+    transition: all 0.4s ease;
+  }
+
+  .header .left button:hover {
+    background-color: #f1be58c5;
+  }
+
+  .header .right {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .header .right img {
+    width: 70%;
+    height: 70%;
+    object-fit: contain;
+    animation: agrandi 10s ease-in-out infinite;
+  }
+}
+
+@media screen and (max-width: 495px) {
+  .header {
+    width: 100%;
+    height: 100vh;
+  }  
+  .header .right {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .header .right img {
+    width: 90%;
+    height: 90%;
+    object-fit: contain;
+    animation: agrandi 10s ease-in-out infinite;
+  }
+}
+@media screen and (max-width: 451px) {
+  .header {
+    width: 100%;
+    height: 100vh;
+  }
+
+  .header .right {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .header .right img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    animation: agrandi 10s ease-in-out infinite;
+  }
+}

@@ -6,6 +6,7 @@ import Cart from "./Pages/Cart/Cart";
 import PlaceOrder from "./Pages/PlaceOrder/PlaceOrder";
 import AFooter from "./Composant/AFooter/AFooter";
 import LoginPage from "./Composant/LoginPage/LoginPage";
+import Promotion from "./Composant/Promotion/Promotion";
 
 const App = () => {
 
@@ -20,6 +21,7 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/cart" element={<Cart />} />
           <Route path="/order" element={<PlaceOrder />} />
+          <Route path="/promotion" element={<Promotion/>} />
         </Routes>
       </div>
       <AFooter />
